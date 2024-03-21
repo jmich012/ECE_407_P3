@@ -13,6 +13,7 @@ TagManager:
   - BombPickup
   - ExplosionFX
   - HealthBar
+  - Pipe
   layers:
   - Default
   - TransparentFX

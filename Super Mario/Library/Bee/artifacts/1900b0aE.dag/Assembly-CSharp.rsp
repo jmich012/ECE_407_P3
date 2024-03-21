@@ -390,6 +390,7 @@
 "Assets/Scripts/SetParticleSortingLayer.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/TestScript.cs"
+"Assets/Super Mario Bros/Scripts/EnemyMovement.cs"
 -langversion:9.0
 
 

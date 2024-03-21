@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEditor;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -40,7 +41,9 @@ public class PlayerControl : MonoBehaviour
 		// If the jump button is pressed and the player is grounded then the player should jump.
 		if(Input.GetButtonDown("Jump") && grounded)
 			jump = true;
-	}
+			// Set the Jump animator trigger parameter.
+			anim.SetBool("Jumping", jump);
+    }
 
 
 	void FixedUpdate ()
@@ -48,8 +51,9 @@ public class PlayerControl : MonoBehaviour
 		// Cache the horizontal input.
 		float h = Input.GetAxis("Horizontal");
 
-		// The Speed animator parameter is set to the absolute value of the horizontal input.
-		//anim.SetFloat("Speed", Mathf.Abs(h));
+        // The Speed animator parameter is set to the absolute value of the horizontal input.
+        anim.SetFloat("x_velocity", Mathf.Abs(h));
+		
 
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
 		if(h * rd.velocity.x < maxSpeed)
@@ -73,20 +77,16 @@ public class PlayerControl : MonoBehaviour
 		// If the player should jump...
 		if(jump)
 		{
-			// Set the Jump animator trigger parameter.
-			//anim.SetTrigger("Jump");
-
-			// Play a random jump audio clip.
-			//int i = Random.Range(0, jumpClips.Length);
-			//AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
-
 			// Add a vertical force to the player.
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce));
 
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;
+
+			anim.SetBool("Jumping", jump);
 		}
-	}
+        anim.SetFloat("y_velocity", rd.velocity.y);
+    }
 	
 	
 	void Flip ()
