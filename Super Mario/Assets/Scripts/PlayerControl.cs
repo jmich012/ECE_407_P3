@@ -23,6 +23,8 @@ public class PlayerControl : MonoBehaviour
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;                  // Reference to the player's animator component.
 
+	private Camera mainCamera;
+
 	private Rigidbody2D rd;
 
     void Awake()
@@ -31,6 +33,7 @@ public class PlayerControl : MonoBehaviour
 		groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator>();
 		rd = GetComponent<Rigidbody2D>();
+		mainCamera = Camera.main;
 	}
 
 	void Update()
@@ -86,10 +89,14 @@ public class PlayerControl : MonoBehaviour
 			anim.SetBool("Jumping", jump);
 		}
         anim.SetFloat("y_velocity", rd.velocity.y);
-    }
-	
-	
-	void Flip ()
+
+		// camera edges for clamping mario to screen
+		Vector2 leftEdge = mainCamera.ScreenToWorldPoint(Vector2.zero);
+		Vector2 rightEdge = mainCamera.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+	}
+
+
+    void Flip ()
 	{
 		// Switch the way the player is labelled as facing.
 		facingRight = !facingRight;

@@ -2083,17 +2083,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7aa65529a54a42545a4051f703366292,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2765340741395844979, guid: 414f78bb8f47b6a46984a1257d4ae117,
         type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4625947049376340853, guid: 414f78bb8f47b6a46984a1257d4ae117,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4625947049376340853, guid: 414f78bb8f47b6a46984a1257d4ae117,
         type: 3}
@@ -2150,8 +2149,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goomba
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -6086371154796666830, guid: 414f78bb8f47b6a46984a1257d4ae117, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3200,7 +3198,7 @@ Transform:
   m_GameObject: {fileID: 564444285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 6.5, z: -10}
+  m_LocalPosition: {x: 10.5, y: 6.59, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8425,6 +8423,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125557093258696654, guid: 0c88d169f9ff4b64182d3e505e0af17d,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125557093258696654, guid: 0c88d169f9ff4b64182d3e505e0af17d,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5762736875715728032, guid: 0c88d169f9ff4b64182d3e505e0af17d,
         type: 3}

@@ -1,18 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Super Mario\\",
+  "WorkspaceRootPath": "D:\\ECE_407_P3\\Super Mario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Super Mario\\Assets\\Scripts\\PlayerControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PlayerControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\super mario bros\\scripts\\entitymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\entitymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Player Movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Super Mario Bros\\Scripts\\Player Movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Super Mario\\Assets\\Scripts\\CameraFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CameraFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Player Movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,41 +26,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EntityMovement.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\EntityMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\EntityMovement.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\EntityMovement.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\EntityMovement.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T01:42:22.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerControl.cs",
-              "DocumentMoniker": "D:\\Super Mario\\Assets\\Scripts\\PlayerControl.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
-              "ToolTip": "D:\\Super Mario\\Assets\\Scripts\\PlayerControl.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowFwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T20:21:03.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Player Movement.cs",
               "DocumentMoniker": "D:\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Player Movement.cs",
-              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\Player Movement.cs",
+              "RelativeDocumentMoniker": "..\\..\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Player Movement.cs",
               "ToolTip": "D:\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Player Movement.cs",
-              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\Player Movement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAB2AAAA",
+              "RelativeToolTip": "..\\..\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Player Movement.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T00:23:17.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CameraFollow.cs",
-              "DocumentMoniker": "D:\\Super Mario\\Assets\\Scripts\\CameraFollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
-              "ToolTip": "D:\\Super Mario\\Assets\\Scripts\\CameraFollow.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAwwCgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T00:20:16.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-28T00:23:17.985Z"
             }
           ]
         }

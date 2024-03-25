@@ -32,7 +32,6 @@ public class CameraFollow : MonoBehaviour
 		// Get the current position of the camera 
 		Vector3 cameraPosition = transform.position;
 
-
 		// follow the payer 
 		cameraPosition.x = Mathf.Max(cameraPosition.x, player.position.x);
 		cameraPosition.y = Mathf.Max(cameraPosition.y, player.position.y);
@@ -41,9 +40,6 @@ public class CameraFollow : MonoBehaviour
 		{
 			cameraPosition.y = Mathf.MoveTowards(cameraPosition.y, 6.5f, ySmooth * Time.deltaTime);
 		}
-
-
-
 
         // set the camera's position to the new position
         transform.position = cameraPosition;
