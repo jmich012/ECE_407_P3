@@ -18,7 +18,7 @@ public class Goomba : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (DotTest(collision.transform,transform,Vector2.down))
+            if (collision.transform.directionTest(transform,Vector2.down))
             {
                 dead = true;
                 anim.SetBool("Dead", dead);
@@ -29,12 +29,5 @@ public class Goomba : MonoBehaviour
                 anim.SetBool("Dead", dead);
             }
         }
-    }
-
-    // Check if the player is falling onto the Goomba
-    private bool DotTest(Transform player, Transform goomba, Vector2 testDriection)
-    {
-        Vector2 direction = goomba.position - player.position;
-        return Vector2.Dot(direction.normalized, testDriection) > 0.25f;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEditor;
+using System.Runtime.CompilerServices;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class PlayerControl : MonoBehaviour
 	private Transform groundCheck;			// A position marking where to check if the player is grounded.
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;                  // Reference to the player's animator component.
+	private bool enemyBounce = false;
+	private int score = 0;
+	private bool sliding = false;
+	private bool running = false;
 
 	private Camera mainCamera;
 
@@ -54,10 +59,6 @@ public class PlayerControl : MonoBehaviour
 		// Cache the horizontal input.
 		float h = Input.GetAxis("Horizontal");
 
-        // The Speed animator parameter is set to the absolute value of the horizontal input.
-        anim.SetFloat("x_velocity", Mathf.Abs(h));
-		
-
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
 		if(h * rd.velocity.x < maxSpeed)
 			// ... add a force to the player.
@@ -66,7 +67,7 @@ public class PlayerControl : MonoBehaviour
 		// If the player's horizontal velocity is greater than the maxSpeed...
 		if(Mathf.Abs(rd.velocity.x) > maxSpeed)
 			// ... set the player's velocity to the maxSpeed in the x axis.
-			rd.velocity = new Vector2(Mathf.Sign(GetComponent<Rigidbody2D>().velocity.x) * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			rd.velocity = new Vector2(Mathf.Sign(rd.velocity.x) * maxSpeed, rd.velocity.y);
 
 		// If the input is moving the player right and the player is facing left...
 		if(h > 0 && !facingRight)
@@ -80,19 +81,33 @@ public class PlayerControl : MonoBehaviour
 		// If the player should jump...
 		if(jump)
 		{
-			// Add a vertical force to the player.
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce));
-
+			if (enemyBounce)
+			{
+				rd.AddForce(new Vector2(0f, 3*jumpForce/4));
+				enemyBounce = false;
+            }
+            else
+			{
+				// Add a vertical force to the player.
+				rd.AddForce(new Vector2(0f, jumpForce));
+			}			
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;
 
 			anim.SetBool("Jumping", jump);
 		}
-        anim.SetFloat("y_velocity", rd.velocity.y);
 
-		// camera edges for clamping mario to screen
-		Vector2 leftEdge = mainCamera.ScreenToWorldPoint(Vector2.zero);
-		Vector2 rightEdge = mainCamera.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        sliding = (facingRight && rd.velocity.x < 0f) || ( !facingRight && rd.velocity.x > 0f);
+        anim.SetBool("Slide", sliding);
+
+        // The Speed animator parameter is set to the absolute value of the horizontal input.
+        running = Mathf.Abs(h) > 0.25f || Mathf.Abs(rd.velocity.x) > 0.25f;
+        anim.SetBool("Running", running);
+
+
+		Vector3 viewportPos = mainCamera.WorldToViewportPoint(transform.position);
+		viewportPos.x = Mathf.Clamp(viewportPos.x, 0.005f, 0.95f);
+		transform.position = mainCamera.ViewportToWorldPoint(viewportPos);
 	}
 
 
@@ -144,4 +159,24 @@ public class PlayerControl : MonoBehaviour
 			// Otherwise return this index.
 			return i;
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+		if (collision.gameObject.CompareTag("Enemy"))
+		{
+			if (transform.directionTest(collision.transform, Vector2.down))
+			{
+				jump = true;
+				enemyBounce = true;
+				score += 100;
+			}
+		}
+		else if (collision.gameObject.CompareTag("PowerUp"))
+		{
+			if (transform.directionTest(collision.transform, Vector2.up))
+			{ 
+			
+			}
+		}
+    }
 }

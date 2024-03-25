@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\ScoreShadow.cs" />
     <Compile Include="Assets\Super Mario Bros\Scripts\EntityMovement.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Super Mario Bros\Scripts\Utility.cs" />
     <Compile Include="Assets\Scripts\Rocket.cs" />
     <Compile Include="Assets\Scripts\BackgroundPropSpawner.cs" />
     <Compile Include="Assets\Scripts\LayBombs.cs" />

@@ -392,6 +392,7 @@
 "Assets/Scripts/TestScript.cs"
 "Assets/Super Mario Bros/Scripts/EntityMovement.cs"
 "Assets/Super Mario Bros/Scripts/Goomba.cs"
+"Assets/Super Mario Bros/Scripts/Utility.cs"
 -langversion:9.0
 
 
