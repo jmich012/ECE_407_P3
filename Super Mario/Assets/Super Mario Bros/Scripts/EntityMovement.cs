@@ -8,10 +8,12 @@ public class EntityMovement : MonoBehaviour
     private Rigidbody2D rigidBody;
     private Vector2 velocity;
     private Transform groundCheck;
+    private Animator anim;
 
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         groundCheck = transform.Find("groundCheck");
         enabled = false;
     }
@@ -30,8 +32,30 @@ public class EntityMovement : MonoBehaviour
         {
             velocity.y = Mathf.Max(velocity.y, 0f);
         }
+
+        anim.SetTrigger("Walking");
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (CompareTag("Enemy"))
+        {
+            if (collision.collider != null)
+            {
+                if (!collision.gameObject.CompareTag("Player"))
+                {
+                    moveDirection = -moveDirection;
+                }
+            }
+        }
+        else {
+            if (collision.collider != null)
+            {
+                moveDirection = -moveDirection;
+            }
+        }
+ 
+    }
 
     private void OnBecameInvisible()
     {

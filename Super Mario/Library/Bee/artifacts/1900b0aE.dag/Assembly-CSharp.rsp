@@ -391,6 +391,7 @@
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/TestScript.cs"
 "Assets/Super Mario Bros/Scripts/EntityMovement.cs"
+"Assets/Super Mario Bros/Scripts/Goomba.cs"
 -langversion:9.0
 
 
