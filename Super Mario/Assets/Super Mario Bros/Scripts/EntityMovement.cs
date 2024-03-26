@@ -4,6 +4,7 @@ public class EntityMovement : MonoBehaviour
 {
     public float moveSpeed = 1f; 
     public Vector2 moveDirection = Vector2.left;
+    public bool customAnimations = true;
 
     private Rigidbody2D rigidBody;
     private Vector2 velocity;
@@ -13,8 +14,11 @@ public class EntityMovement : MonoBehaviour
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
         groundCheck = transform.Find("groundCheck");
+        if (!customAnimations)
+        {
+            anim = GetComponent<Animator>();
+        }
         enabled = false;
     }
 
@@ -33,7 +37,10 @@ public class EntityMovement : MonoBehaviour
             velocity.y = Mathf.Max(velocity.y, 0f);
         }
 
-        anim.SetTrigger("Walking");
+        if (!customAnimations)
+        {
+            anim.SetTrigger("Walking");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

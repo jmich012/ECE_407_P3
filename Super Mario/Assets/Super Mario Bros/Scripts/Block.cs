@@ -6,6 +6,7 @@ public class Block : MonoBehaviour
 {
     public int maxHits = -1;
     public Sprite emptyBlock;
+    public GameObject item;
     public bool canBeDestoryed = false;
 
     private bool blockEmpty = false;
@@ -33,6 +34,11 @@ public class Block : MonoBehaviour
         {
             blockEmpty = true;
             spriteRenderer.sprite = emptyBlock;
+        }
+
+        if (item != null)
+        { 
+            Instantiate(item,transform.position,Quaternion.identity);
         }
 
         // start animation process for block
