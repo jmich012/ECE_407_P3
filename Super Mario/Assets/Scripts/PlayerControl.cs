@@ -5,30 +5,34 @@ using System.Runtime.CompilerServices;
 
 public class PlayerControl : MonoBehaviour
 {
-    [HideInInspector]
-    public bool facingRight = true;			// For determining which way the player is currently facing.
 	[HideInInspector]
-	public bool jump = false; // Condition for whether the player should jump.
+	public bool facingRight = true;         // For determining which way the player is currently facing.
+	[HideInInspector]
+	public bool jump { get; private set; } = false; // Condition for whether the player should jump.
 
-	public float moveForce = 365f;			// Amount of force added to move the player left and right.
-	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
-	public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
-	public float jumpForce = 1000f;			// Amount of force added when the player jumps.
-	public AudioClip[] taunts;				// Array of clips for when the player taunts.
-	public float tauntProbability = 50f;	// Chance of a taunt happening.
-	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
+	public float moveForce = 365f;          // Amount of force added to move the player left and right.
+	public float maxSpeed = 5f;             // The fastest the player can travel in the x axis.
+	public AudioClip[] jumpClips;           // Array of clips for when the player jumps.
+	public float jumpForce = 1000f;         // Amount of force added when the player jumps.
+	public AudioClip[] taunts;              // Array of clips for when the player taunts.
+	public float tauntProbability = 50f;    // Chance of a taunt happening.
+	public float tauntDelay = 1f;           // Delay for when the taunt should happen.
 
 
-	private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
-	private Transform groundCheck;			// A position marking where to check if the player is grounded.
-	private bool grounded = false;			// Whether or not the player is grounded.
+	private int tauntIndex;                 // The index of the taunts array indicating the most recent taunt.
+	private Transform groundCheck;          // A position marking where to check if the player is grounded.
+	private bool grounded = false;          // Whether or not the player is grounded.
 	private Animator anim;                  // Reference to the player's animator component.
 	private bool enemyBounce = false;
-	private int score = 0;
-	private bool sliding = false;
-	private bool running = false;
 
-	private Camera mainCamera;
+
+	public bool sliding {get; private set;} = false;
+    public bool running { get; private set;} = false;
+
+
+
+
+    private Camera mainCamera;
 
 	private Rigidbody2D rd;
 
@@ -50,7 +54,7 @@ public class PlayerControl : MonoBehaviour
 		if(Input.GetButtonDown("Jump") && grounded)
 			jump = true;
 			// Set the Jump animator trigger parameter.
-			anim.SetBool("Jumping", jump);
+			//anim.SetBool("Jumping", jump);
     }
 
 
@@ -94,15 +98,15 @@ public class PlayerControl : MonoBehaviour
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;
 
-			anim.SetBool("Jumping", jump);
+			//anim.SetBool("Jumping", jump);
 		}
 
         sliding = (facingRight && rd.velocity.x < 0f) || ( !facingRight && rd.velocity.x > 0f);
-        anim.SetBool("Slide", sliding);
+        //anim.SetBool("Slide", sliding);
 
         // The Speed animator parameter is set to the absolute value of the horizontal input.
         running = Mathf.Abs(h) > 0.25f || Mathf.Abs(rd.velocity.x) > 0.25f;
-        anim.SetBool("Running", running);
+        //anim.SetBool("Running", running);
 
 
 		Vector3 viewportPos = mainCamera.WorldToViewportPoint(transform.position);
@@ -168,7 +172,6 @@ public class PlayerControl : MonoBehaviour
 			{
 				jump = true;
 				enemyBounce = true;
-				score += 100;
 			}
 		}
 		else if (collision.gameObject.CompareTag("PowerUp"))
