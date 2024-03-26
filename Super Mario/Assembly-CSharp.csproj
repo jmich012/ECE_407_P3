@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\TestScript.cs" />
     <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
+    <Compile Include="Assets\Super Mario Bros\Scripts\Mario.cs" />
     <Compile Include="Assets\Super Mario Bros\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\PickupSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
@@ -86,10 +87,10 @@
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Super Mario Bros\Scripts\Utility.cs" />
     <Compile Include="Assets\Scripts\Rocket.cs" />
-    <Compile Include="Assets\Super Mario Bros\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\BackgroundPropSpawner.cs" />
     <Compile Include="Assets\Scripts\LayBombs.cs" />
     <Compile Include="Assets\Scripts\Remover.cs" />
+    <Compile Include="Assets\Super Mario Bros\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\HealthPickup.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -13855,6 +13855,11 @@ PrefabInstance:
       propertyPath: moveDirection.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7378578254641327309, guid: 20f8058bf3d049446a646940b9588d4a,
+        type: 3}
+      propertyPath: customAnimations
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7584970273230526971, guid: 20f8058bf3d049446a646940b9588d4a,
         type: 3}
       propertyPath: m_LocalPosition.x

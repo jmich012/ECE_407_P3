@@ -18,6 +18,8 @@ public class Goomba: MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Mario mario = collision.gameObject.GetComponent<Mario>();
+
             if (collision.transform.directionTest(transform,Vector2.down))
             {
                 dead = true;
@@ -26,7 +28,7 @@ public class Goomba: MonoBehaviour
             }
             else
             {
-                anim.SetBool("Dead", dead);
+                mario.Hit();
             }
         }
     }

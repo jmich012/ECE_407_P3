@@ -395,8 +395,9 @@
 "Assets/Super Mario Bros/Scripts/EntityMovement.cs"
 "Assets/Super Mario Bros/Scripts/Goomba.cs"
 "Assets/Super Mario Bros/Scripts/Item.cs"
+"Assets/Super Mario Bros/Scripts/LevelManager.cs"
+"Assets/Super Mario Bros/Scripts/Mario.cs"
 "Assets/Super Mario Bros/Scripts/PowerUp.cs"
-"Assets/Super Mario Bros/Scripts/UIManager.cs"
 "Assets/Super Mario Bros/Scripts/Utility.cs"
 -langversion:9.0
 
