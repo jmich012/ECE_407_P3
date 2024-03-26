@@ -390,6 +390,8 @@
 "Assets/Scripts/SetParticleSortingLayer.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/TestScript.cs"
+"Assets/Super Mario Bros/Scripts/Block.cs"
+"Assets/Super Mario Bros/Scripts/Coin.cs"
 "Assets/Super Mario Bros/Scripts/EntityMovement.cs"
 "Assets/Super Mario Bros/Scripts/Goomba.cs"
 "Assets/Super Mario Bros/Scripts/Utility.cs"

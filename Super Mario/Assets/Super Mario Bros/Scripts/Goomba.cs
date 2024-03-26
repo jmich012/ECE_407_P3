@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Goomba : MonoBehaviour
+public class Goomba: MonoBehaviour
 {
     public GameObject player;
 

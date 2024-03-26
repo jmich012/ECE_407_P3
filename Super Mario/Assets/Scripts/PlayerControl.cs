@@ -174,8 +174,8 @@ public class PlayerControl : MonoBehaviour
 		else if (collision.gameObject.CompareTag("PowerUp"))
 		{
 			if (transform.directionTest(collision.transform, Vector2.up))
-			{ 
-			
+			{
+				rd.velocity = new Vector2(rd.velocity.x, 0f);
 			}
 		}
     }
