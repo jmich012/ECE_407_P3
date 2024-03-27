@@ -25,16 +25,18 @@ public class PowerUp : MonoBehaviour
         switch (type)
         {
             case Type.Coin:
-                LevelManager.Instance.AddCoin();
+                LevelManager.Instance.AddCoin(1);
+                player.GetComponent<Mario>().PickUpCoin();
                 break;
             case Type.ExtraLife:
                 LevelManager.Instance.AddLife();
+                player.GetComponent<Mario>().PlayOneUp();
                 break;
             case Type.MagicMushroom:
                 player.GetComponent<Mario>().Grow();
                 break;
             case Type.Starpower:
-
+                player.GetComponent<Mario>().StarPower();
                 break;
         }
         Destroy(gameObject);

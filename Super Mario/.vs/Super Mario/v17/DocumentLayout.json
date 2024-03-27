@@ -3,27 +3,55 @@
   "WorkspaceRootPath": "D:\\ECE_407_P3\\Super Mario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\super mario bros\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\super mario bros\\scripts\\mario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\mario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\super mario bros\\scripts\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\super mario bros\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\mario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\mario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\super mario bros\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\goomba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\super mario bros\\scripts\\koopa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\koopa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\deathbarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\deathbarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|d:\\ece_407_p3\\super mario\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\super mario bros\\scripts\\entitymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\super mario bros\\scripts\\entitymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|D:\\ECE_407_P3\\Super Mario\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26918D3B-5C2A-37DB-3B66-926DC62C3E92}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,20 +62,107 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Koopa.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Koopa.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\Koopa.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Koopa.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\Koopa.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wCgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T06:30:15.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Goomba.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Goomba.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\Goomba.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Goomba.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\Goomba.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wCsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T05:33:59.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Item.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\Item.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Item.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\Item.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T04:52:08.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EntityMovement.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\EntityMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\EntityMovement.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\EntityMovement.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\EntityMovement.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwDsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:48:29.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\UIManager.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\UIManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T02:04:24.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeathBarrier.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\DeathBarrier.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\DeathBarrier.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\DeathBarrier.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\DeathBarrier.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T00:34:18.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Coin.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Coin.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\Coin.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Coin.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\Coin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T00:01:52.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Block.cs",
               "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Block.cs",
               "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\Block.cs",
               "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Block.cs",
               "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\Block.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T23:53:40.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T23:53:40.826Z"
             },
             {
               "$type": "Document",
@@ -57,14 +172,14 @@
               "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\PowerUp.cs",
               "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\PowerUp.cs",
               "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\PowerUp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-26T23:51:32.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Scripts\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealth.cs",
@@ -72,46 +187,44 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerHealth.cs",
               "ViewState": "AQIAAEIAAAAAAAAAAAAowE8AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T19:22:13.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T19:22:13.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Mario.cs",
-              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Mario.cs",
-              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\Mario.cs",
-              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Mario.cs",
-              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\Mario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T18:40:54.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\LevelManager.cs",
               "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\LevelManager.cs",
               "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\LevelManager.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAIwAEAAAAAAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAiwFsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-26T18:21:37.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "PlayerControl.cs",
               "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControl.cs",
               "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Scripts\\PlayerControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerControl.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAuwGwAAAAKAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwC0AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T20:21:03.528Z",
+              "WhenOpened": "2024-02-28T20:21:03.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mario.cs",
+              "DocumentMoniker": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Mario.cs",
+              "RelativeDocumentMoniker": "Assets\\Super Mario Bros\\Scripts\\Mario.cs",
+              "ToolTip": "D:\\ECE_407_P3\\Super Mario\\Assets\\Super Mario Bros\\Scripts\\Mario.cs",
+              "RelativeToolTip": "Assets\\Super Mario Bros\\Scripts\\Mario.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAUwMwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T18:40:54.307Z",
               "EditorCaption": ""
             }
           ]

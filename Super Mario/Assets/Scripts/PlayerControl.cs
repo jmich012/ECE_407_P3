@@ -31,7 +31,7 @@ public class PlayerControl : MonoBehaviour
 
 
 
-
+	private float baseSpeed;
     private Camera mainCamera;
 
 	private Rigidbody2D rd;
@@ -43,6 +43,7 @@ public class PlayerControl : MonoBehaviour
 		anim = GetComponent<Animator>();
 		rd = GetComponent<Rigidbody2D>();
 		mainCamera = Camera.main;
+		baseSpeed = maxSpeed;
 	}
 
 	void Update()
@@ -58,7 +59,7 @@ public class PlayerControl : MonoBehaviour
     }
 
 
-	void FixedUpdate ()
+	void FixedUpdate()
 	{
 		// Cache the horizontal input.
 		float h = Input.GetAxis("Horizontal");
@@ -98,15 +99,21 @@ public class PlayerControl : MonoBehaviour
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;
 
-			//anim.SetBool("Jumping", jump);
-		}
-
+			if (GetComponent<Mario>().big)
+			{
+				GetComponent<AudioSource>().clip = jumpClips[1];
+				GetComponent<AudioSource>().Play();
+            }
+            else 
+			{
+                GetComponent<AudioSource>().clip = jumpClips[0];
+				GetComponent<AudioSource>().Play();
+            }
+        }
         sliding = (facingRight && rd.velocity.x < 0f) || ( !facingRight && rd.velocity.x > 0f);
-        //anim.SetBool("Slide", sliding);
 
         // The Speed animator parameter is set to the absolute value of the horizontal input.
         running = Mathf.Abs(h) > 0.25f || Mathf.Abs(rd.velocity.x) > 0.25f;
-        //anim.SetBool("Running", running);
 
 
 		Vector3 viewportPos = mainCamera.WorldToViewportPoint(transform.position);
@@ -182,4 +189,14 @@ public class PlayerControl : MonoBehaviour
 			}
 		}
     }
+
+	public void SpeedBoost()
+	{
+		maxSpeed *= 1.5f;
+	}
+
+	public void ResetSpeed()
+	{
+		maxSpeed = baseSpeed;
+	}
 }

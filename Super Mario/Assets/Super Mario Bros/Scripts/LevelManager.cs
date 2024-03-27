@@ -1,5 +1,7 @@
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -9,8 +11,12 @@ public class LevelManager : MonoBehaviour
     public int level { get; private set;}
     public int lives { get; private set; }
 
-    private int score;
+    public int score { get; private set; }
 
+    public int time { get; private set; }
+    public int coinCount { get; private set; }
+
+    private float timer = 0;
     private void Awake()
     {
         if (Instance != null)
@@ -24,6 +30,16 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= 1.0f)
+        {
+            time--;
+            timer = 0.0f; 
+        }
+    }
+
     private void OnDestroy()
     {
         if (Instance == this)
@@ -34,13 +50,15 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        NewGame();    
+        NewGame();
     }
 
     private void NewGame()
     {
         lives = 3;
         score = 0;
+        coinCount = 0;
+        time = 400;
 
         LoadWorld(1,1);
     }
@@ -78,15 +96,26 @@ public class LevelManager : MonoBehaviour
 
     public void AddLife()
     { 
-        lives++; 
+        lives++;
     }
 
-    public void AddCoin() 
+    public void AddCoin(int multiplier) 
     {
-        score += 100;
+        score += 100 * multiplier;
+        coinCount++;
         if (score % 2000 == 0) 
         {
             AddLife();
         }
+    }
+
+    public void KillGoomba()
+    {
+        score += 100;
+    }
+
+    public void KillKoopa()
+    {
+        score += 200;
     }
 }

@@ -3,9 +3,14 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    public bool inBlock = false;
     private void Start()
     {
-        StartCoroutine(UpdateCoin());
+        if (inBlock)
+        {
+            StartCoroutine(UpdateCoin());
+            LevelManager.Instance.AddCoin(2);
+        }
     }
 
 
@@ -13,6 +18,8 @@ public class Coin : MonoBehaviour
     { 
         Vector3 currentPosition = transform.position;
         Vector3 newPosition = currentPosition + Vector3.up * 2f;
+
+        GetComponent<AudioSource>().Play();
 
         yield return AnimateBlock(currentPosition, newPosition);
         yield return AnimateBlock(newPosition, currentPosition);

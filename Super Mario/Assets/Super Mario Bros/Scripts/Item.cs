@@ -1,12 +1,17 @@
 using System.Collections;
-using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+    public AudioClip clip;
     private void Start()
     {
         StartCoroutine(SpawnItem());
+        if (clip != null)
+        {
+            GetComponent<AudioSource>().clip = clip;
+            GetComponent<AudioSource>().Play();
+        }
     }
 
 
@@ -16,6 +21,7 @@ public class Item : MonoBehaviour
         CircleCollider2D circleCollider = GetComponent<CircleCollider2D>();
         BoxCollider2D trigger = GetComponent<BoxCollider2D>();
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        
 
         rb.isKinematic = true;
         circleCollider.enabled = false;
